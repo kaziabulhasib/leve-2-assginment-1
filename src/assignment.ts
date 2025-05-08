@@ -6,7 +6,7 @@ function formatString(input: string, toUpper?: boolean): string {
   }
 }
 
-// 2
+
 type RatedItem = {
   title: string;
   rating: number;
@@ -16,13 +16,13 @@ function filterByRating(items: RatedItem[]): RatedItem[] {
   return items.filter((item) => item.rating >= 4);
 }
 
-// 3
+
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   return ([] as T[]).concat(...arrays);
 }
 
-// 4
+
 class Vehicle {
   constructor(private make: string, private year: number) {}
 
@@ -41,13 +41,13 @@ class Car extends Vehicle {
   }
 }
 
-// 5
+
 
 function processValue(value: string | number): number {
   return typeof value === "string" ? value.length : value * 2;
 }
 
-// 6
+
 interface Product {
   name: string;
   price: number;
@@ -60,7 +60,7 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
   );
 }
 
-//   7
+
 
 enum Day {
   Monday,
@@ -76,7 +76,7 @@ function getDayType(day: Day): string {
   return day === Day.Saturday || day === Day.Sunday ? "Weekend" : "Weekday";
 }
 
-// 8
+
 
 async function squareAsync(n: number): Promise<number> {
   if (n < 0) {
